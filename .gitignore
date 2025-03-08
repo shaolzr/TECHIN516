@@ -1,15 +1,29 @@
-turtlebot_ws/src/
-turtlebot_ws/install/
-turtlebot_ws/log/
-turtlebot_ws/build/
-kinova_ws/src/
-kinova_ws/install/
-kinova_ws/log/
-kinova_ws/build/
-/src/
-/install/
-/log/
-/build/
-TECHIN516Lab0/
-/lab0/lab0_linux/
+# ROS 2 workspace folders
+build/
+install/
+log/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+venv/
+.env
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# IDE/editor specific files
 .vscode/
+.idea/
+*.swp
+*.swo
+
+# Git temporary files
+.gitignore
+

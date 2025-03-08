@@ -10,10 +10,10 @@ class OdomSubscriber(Node):
     def __init__(self):
         super().__init__('odom_subscriber')
         self.subscription = self.create_subscription(
-            <message>, # TODO: what type of message should be subscribed to?
-            '</topic>', # TODO: what topic should be subscribed to?
-            <function>, # TODO: which function should be used as the 'callback' function?
-            <queue_size>) # TODO: what should the queue size be?
+            Odometry, # TODO: what type of message should be subscribed to?
+            '/odom', # TODO: what topic should be subscribed to?
+            self.odom_callback, # TODO: which function should be used as the 'callback' function?
+            10) # TODO: what should the queue size be?
         self.subscription  # prevent unused variable warning
 
         # Lists to store the x and y data
@@ -22,9 +22,9 @@ class OdomSubscriber(Node):
 
     def odom_callback(self, msg):
         # Extract the x and y positions
-        position = # TODO: retrieve the pose data from the message
-        x = # TODO: retrieve the x data from the pose
-        y = # TODO: retireve the y data from the pose
+        position = msg.pose.pose.position# TODO: retrieve the pose data from the message
+        x = position.x# TODO: retrieve the x data from the pose
+        y = position.y # TODO: retireve the y data from the pose
 
         # Log the position
         self.get_logger().info(f"Position -> x: {x}, y: {y}")
