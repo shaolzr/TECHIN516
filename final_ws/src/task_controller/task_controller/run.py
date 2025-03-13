@@ -70,12 +70,12 @@ def main():
     execute_movements(arm, gripper, movements)
 
     # Shutdown devices
-    gripper.shutdown()
-    arm.shutdown()
-    rclpy.shutdown()
+    #gripper.shutdown()
+    #arm.shutdown()
+    #rclpy.shutdown()
 
     print("Process completed. Exiting now.")
-    sys.exit(0)  # Immediately exit the program with a success status code
+    #sys.exit(0)  # Immediately exit the program with a success status code
 
 if __name__ == '__main__':
     main()

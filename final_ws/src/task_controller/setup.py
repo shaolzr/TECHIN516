@@ -24,6 +24,10 @@ setup(
         'run = task_controller.run:main',
         'move = task_controller.move:main',
         'back = task_controller.back:main',
+        'total = task_controller.total:main',
+        'maze = task_controller.maze:main',
+        'maze1 = task_controller.maze1:main',
+        'runrun = task_controller.runrun:main',
         ],
     },
 )
