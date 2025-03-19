@@ -16,6 +16,7 @@
 ```bash
 ros2 launch task_controller total   # Runs the simple task
 ros2 launch task_controller runrun  # Runs the maze task
+```
 
 
 
