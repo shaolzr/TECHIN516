@@ -9,17 +9,17 @@
 - `put.csv` - A CSV file containing waypoints for the Kinova robotic arm.
 
 ## Directory Structure
-final_ws/
-│
-├── src/
-│   ├── task_controller/
-│   │   ├── task_controller/
-│   │   │   ├── total.py/            # Final project code
-│   │   │   ├── runrun.py/           # Maze-solving code
-│   │   │   ├── (other python)/      # Test code
-│   │   │   ├── put.csv              # Kinova arm waypoints
-│   │   │
-│   │   ├── setup.py                 # Python setup file
-│   │   ├── package.xml              # ROS 2 package info
+final_ws/<br>
+│<br>
+├── src/<br>
+│   ├── task_controller/<br>
+│   │   ├── task_controller/<br>
+│   │   │   ├── total.py/            # Final project code<br>
+│   │   │   ├── runrun.py/           # Maze-solving code<br>
+│   │   │   ├── (other python)/      # Test code<br>
+│   │   │   ├── put.csv              # Kinova arm waypoints<br>
+│   │   │<br>
+│   │   ├── setup.py                 # Python setup file<br>
+│   │   ├── package.xml              # ROS 2 package info<br>
 
 
